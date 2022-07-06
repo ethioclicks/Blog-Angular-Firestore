@@ -1,0 +1,28 @@
+/* 
+#imageActionButtons *
+{
+margin: 5px;
+}
+.uploadedimages{
+    width: 100%;
+    height: 180px !important;
+    object-fit: contain;
+} 
+.progress{
+    width: 100%;
+}
+.card {
+    height: 260px;
+    width: 300px;
+    float: left;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  @media only screen and (max-width:600px){
+      .card{
+          width: 90%;
+      }
+  } */

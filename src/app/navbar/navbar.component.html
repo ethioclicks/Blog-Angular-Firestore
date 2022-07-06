@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>supervised_user_circle</mat-icon>
+  </button>
+  <span>Blog Post</span>
+  <span class="example-spacer"></span>
+  <button class="button" mat-raised-button color="warn" (click)="openDialog()">Add Post</button>
+  <button class="button" mat-raised-button color="warn" routerLinkActive="active" [routerLink]="['DragAndDrop']">Drag and Drop</button>
+  <button class="button" mat-raised-button color="warn" routerLinkActive="active" [routerLink]="['singleupload']">Single upload</button>
+  <button class="button" mat-raised-button color="warn" routerLinkActive="active" [routerLink]="['all']">All</button>
+
+</mat-toolbar>
+
+
+<!-- <ul>
+  <li class="text" *ngFor="let post of posts | async">
+    {{post.postBy}} {{post.postTitle}} {{post.postDescription}} 
+  </li>
+</ul> -->

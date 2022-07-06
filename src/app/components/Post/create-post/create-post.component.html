@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Add Post Form</h1>
+<div mat-dialog-content>
+    <form [formGroup] ="postForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Posted by</mat-label>
+            <input formControlName="postBy" matInput placeholder="Placeholder">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Post Title</mat-label>
+            <input formControlName="postTitle" matInput placeholder="Placeholder">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Post Description</mat-label>
+            <textarea rows="6" formControlName="postDescription" matInput></textarea>
+        </mat-form-field>
+        
+    </form>
+    
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button type="submit" *ngIf="!isEdit" style="margin-left: 8px;" mat-raised-button color="primary" (click)="AddPost()" mat-dialog-close>Submit</button>
+    <button type="submit"  *ngIf="isEdit" style="margin-left: 8px;" mat-raised-button color="primary"  (click)="updatePost()" mat-dialog-close>Save</button>
+</div>

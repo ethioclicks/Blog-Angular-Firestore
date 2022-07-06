@@ -1,0 +1,24 @@
+<div class="offset-1">
+    <form [formGroup]="postForms" (ngSubmit)="SaveData()">
+        <mat-form-field appearance="outline">
+            <mat-label>Posted by</mat-label>
+            <input matInput formControlName="postby" placeholder="Placeholder">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Post Title</mat-label>
+            <input matInput formControlName="title" placeholder="Placeholder">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Post Description</mat-label>
+            <textarea rows="6" formControlName="desc" matInput></textarea>
+        </mat-form-field>
+        <div><app-upload-form (onSingleImageUploaded)="singleUploadImage($event)"></app-upload-form>
+        </div>
+        <uploader></uploader>
+        <div>
+            <button type="submit" style="margin-left: 8px;" mat-raised-button color="primary">Submit</button>
+        </div>
+
+    </form>
+
+</div>
