@@ -30,7 +30,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 To make the strict mode false we have to change the strict in `tsconfig.json` property to `false`.
 
-## This project uses a Firestore cloud database and storage
+## This project uses Angular material and Angular Firebase to install this matters we used the command 
+
+`ng add @angular/material` `ng add @angular/fire`
+
+AngularFire smooths over the rough edges an Angular developer might encounter when implementing the framework-agnostic Firebase SDK & aims to provide a more natural developer experience by conforming to Angular conventions.
+
+## This project uses a Firebase Firestore cloud database and storage
 
 It has a values to store from a formfield data to images in a single and drag and drop choice as single components.
 
