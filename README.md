@@ -38,7 +38,10 @@ AngularFire smooths over the rough edges an Angular developer might encounter wh
 
 ## This project uses a Firebase Firestore cloud database and storage
 
-It has a values to store from a formfield data to images in a single and drag and drop choice as single components.
+It has a values to store from a form field data to images in a single and drag and drop choice as single components.
 
 on further details it will have another component to work on all those components into a single components to use the options together.
 
+Where an Image will be stored on the storage and the URL will be added to the firestore database.
+
+In a sample form field as we add data and for images added to a specific post we will have the added data with the URL of the images single or multiple images.
